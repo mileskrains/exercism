@@ -5,7 +5,7 @@ def decode(encoding):
         return 1 if digits == '' else int(digits)
     
     for char in encoding:
-        if char in '1234567890':
+        if char.isdigit():
             digits += char
         else:
             decoding += _count_int(digits) * char
