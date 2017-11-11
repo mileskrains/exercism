@@ -6,9 +6,9 @@ def decode(encoding):
     
     for char in encoding:
         if char in '1234567890':
-            digits = digits + char
+            digits += char
         else:
-            decoding = decoding + _count_int(digits) * char
+            decoding += _count_int(digits) * char
             digits = ''
     return decoding
 
@@ -24,8 +24,8 @@ def encode(plaintext):
         if char == prior:
             count += 1
         else:
-            encoding = encoding + _count_string(count) + prior
+            encoding += _count_string(count) + prior
             count = 1
         prior = char
-    encoding = encoding + _count_string(count) + prior
+    encoding += _count_string(count) + prior
     return encoding
