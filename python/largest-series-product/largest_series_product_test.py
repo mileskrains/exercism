@@ -66,7 +66,7 @@ class SeriesTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             largest_product("12345", -1)
 
-    @unittest.skip("extra-credit")
+    #@unittest.skip("extra-credit")
     def test_project_euler_big_number(self):
         series = (
             "73167176531330624919225119674426574742355349194934969835203127745"
