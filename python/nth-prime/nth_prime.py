@@ -2,7 +2,7 @@ import math
 
 
 def primes_up_to(limit=100, primes=[2]):
-    if limit < primes[-1]:
+    if limit <= primes[-1]:
         return primes
     mask = [True for _ in range(int(1.1*limit)+1)]
     mask[:2] = [False] * 2
