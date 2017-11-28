@@ -1,6 +1,6 @@
 def handshake(number):
     if type(number)==int:
-        number = '{:05b}'.format(number)
+        number = bin(number)[2:]
     try:
         as_int = int(number, 2)
     except ValueError:
