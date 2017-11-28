@@ -31,3 +31,29 @@ def classify(number):
         elif aliquot_sum == number:
             return 'perfect'
     return 'deficient'
+
+
+# grabbed code from @3xpl0r3r for speed comparison ... (it is ~31x faster!) 
+def classify(number):
+    factors = list()
+    total = 0
+
+    if number <=0:
+        raise ValueError
+
+    for i in range(1, int(number ** 0.5+1)):
+        if number % i == 0:
+            if (i != number / i):               
+                factors.append(i)
+                factors.append(number / i)
+            else:
+                factors.append(i)
+    factors.remove(number)
+    total = sum(factors)
+
+    if total == number:
+        return("perfect")
+    elif total > number:
+        return("abundant")
+    else:
+        return("deficient")
