@@ -9,6 +9,7 @@ def star_ct(r, c, inp):
                     stars += 1
     return str(stars) if stars else ' '
 
+
 def board(input_board_array):
     if len(set(map(len, input_board_array))) > 1:
         raise ValueError('rows are not of equal length')
