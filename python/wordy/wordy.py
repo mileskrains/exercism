@@ -12,15 +12,11 @@ def calculate(question):
     is_continuing = True
     while is_continuing:
         operator, operand_2, rest = split_on_digit(rest)
-        if operator == 'plus':
-            operand += operand_2
-        elif operator == 'minus':
-            operand -= operand_2
-        elif operator == 'multiplied by':
-            operand *= operand_2
-        elif operator == 'divided by':
-            operand /= operand_2
-        else:
+        operand = {'plus': operand + operand_2,
+                   'minus': operand - operand_2,
+                   'multiplied by': operand * operand_2,
+                   'divided by': operand / operand_2}.get(operator, 'BAD')
+        if operand == 'BAD':
             raise ValueError
         if rest == '?':
             is_continuing = False
