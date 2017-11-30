@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="tests" name="py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" />
+      <run-configuration type="tests" name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0994ab62-040c-4ee4-aeec-eda6acb1b7da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" />
       <change beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="$PROJECT_DIR$/Untitled.ipynb" />
       <change beforePath="$PROJECT_DIR$/wordy/wordy.py" afterPath="$PROJECT_DIR$/wordy/wordy.py" />
     </list>
@@ -14,11 +20,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_invalid_when_9_digits.coverage" NAME="py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits Coverage Results" MODIFIED="1512017810800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
+    <SUITE FILE_PATH="coverage/python$py_test_in_phone_number_test_py.coverage" NAME="py.test in phone_number_test.py Coverage Results" MODIFIED="1512018288898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_queen_attack_test_QueenAttackTest.coverage" NAME="py.test for queen_attack_test.QueenAttackTest Coverage Results" MODIFIED="1511918630611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/queen-attack" />
-    <SUITE FILE_PATH="coverage/python$py_test_in_wordy_test_py.coverage" NAME="py.test in wordy_test.py Coverage Results" MODIFIED="1512014309996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wordy" />
+    <SUITE FILE_PATH="coverage/python$py_test_in_wordy_test_py.coverage" NAME="py.test in wordy_test.py Coverage Results" MODIFIED="1512015686216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wordy" />
     <SUITE FILE_PATH="coverage/python$py_test_in_minesweeper_test_py.coverage" NAME="py.test in minesweeper_test.py Coverage Results" MODIFIED="1511913590704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation.coverage" NAME="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation Coverage Results" MODIFIED="1512017801055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_minesweeper_test_MinesweeperTest_test_space_surrounded_by_mines.coverage" NAME="py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines Coverage Results" MODIFIED="1511912987852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
+    <SUITE FILE_PATH="coverage/python$py_test_for_wordy_test_WordyTest.coverage" NAME="py.test for wordy_test.WordyTest Coverage Results" MODIFIED="1512016251465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wordy" />
     <SUITE FILE_PATH="coverage/python$py_test_in_bracket_push_test_py.coverage" NAME="py.test in bracket_push_test.py Coverage Results" MODIFIED="1511890330897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bracket-push" />
+    <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_invalid_when_11_digits_and_first_not_1.coverage" NAME="py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1 Coverage Results" MODIFIED="1512018276300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -39,29 +50,17 @@
         <entry file="file://$PROJECT_DIR$/phone-number/phone_number_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wordy.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wordy/wordy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+              <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="phone_number.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="phone_number.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/phone-number/phone_number.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,6 +78,7 @@
         <option value="$PROJECT_DIR$/minesweeper/minesweeper.py" />
         <option value="$PROJECT_DIR$/queen-attack/queen_attack.py" />
         <option value="$PROJECT_DIR$/wordy/wordy.py" />
+        <option value="$PROJECT_DIR$/phone-number/phone_number.py" />
       </list>
     </option>
   </component>
@@ -122,11 +122,6 @@
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="phone-number" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="wordy" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -152,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in wordy_test.py">
+  <component name="RunManager" selected="Python tests.py.test in phone_number_test.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,12 +167,12 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minesweeper" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phone-number" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -185,15 +180,15 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines&quot;" />
+      <option name="_new_target" value="&quot;phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for queen_attack_test.QueenAttackTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/queen-attack" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phone-number" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -201,15 +196,15 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;queen_attack_test.QueenAttackTest&quot;" />
+      <option name="_new_target" value="&quot;phone_number_test.PhoneTest.test_invalid_when_9_digits&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test in bracket_push_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bracket-push" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phone-number" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -217,26 +212,10 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/bracket-push/bracket_push_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test in minesweeper_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/minesweeper" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/minesweeper/minesweeper_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration name="py.test in wordy_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for wordy_test.WordyTest" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -249,23 +228,39 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/wordy/wordy_test.py&quot;" />
+      <option name="_new_target" value="&quot;wordy_test.WordyTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test in phone_number_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/phone-number" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/phone-number/phone_number_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in bracket_push_test.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in minesweeper_test.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for queen_attack_test.QueenAttackTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in wordy_test.py" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in phone_number_test.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for wordy_test.WordyTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in wordy_test.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for queen_attack_test.QueenAttackTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in minesweeper_test.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in bracket_push_test.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in phone_number_test.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for wordy_test.WordyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -286,35 +281,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_queen_attack_test_QueenAttackTest - 2017.11.28 at 17h 23m 51s.xml">
-      <configuration name="py.test for queen_attack_test.QueenAttackTest" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_invalid_when_11_digits_and_first_not_1 - 2017.11.29 at 21h 04m 31s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_bracket_push_test_py - 2017.11.28 at 09h 32m 12s.xml">
-      <configuration name="py.test in bracket_push_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_invalid_when_11_digits_and_first_not_1 - 2017.11.29 at 21h 04m 37s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_invalid_when_11_digits_and_first_not_1" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_minesweeper_test_py - 2017.11.28 at 15h 50m 36s.xml">
-      <configuration name="py.test in minesweeper_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_invalid_when_9_digits - 2017.11.29 at 20h 56m 51s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_minesweeper_test_py - 2017.11.28 at 15h 54m 22s.xml">
-      <configuration name="py.test in minesweeper_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation - 2017.11.29 at 20h 53m 41s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_minesweeper_test_py - 2017.11.28 at 15h 59m 13s.xml">
-      <configuration name="py.test in minesweeper_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation - 2017.11.29 at 20h 56m 22s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_minesweeper_test_py - 2017.11.28 at 15h 59m 51s.xml">
-      <configuration name="py.test in minesweeper_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation - 2017.11.29 at 20h 56m 27s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_wordy_test_py - 2017.11.29 at 18h 47m 45s.xml">
-      <configuration name="py.test in wordy_test.py" configurationId="tests" />
+    <history-entry file="py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation - 2017.11.29 at 20h 56m 42s.xml">
+      <configuration name="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_wordy_test_py - 2017.11.29 at 19h 15m 01s.xml">
-      <configuration name="py.test in wordy_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_phone_number_test_py - 2017.11.29 at 20h 57m 14s.xml">
+      <configuration name="py.test in phone_number_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_wordy_test_py - 2017.11.29 at 19h 38m 33s.xml">
-      <configuration name="py.test in wordy_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_phone_number_test_py - 2017.11.29 at 21h 01m 15s.xml">
+      <configuration name="py.test in phone_number_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_wordy_test_py - 2017.11.29 at 19h 58m 31s.xml">
-      <configuration name="py.test in wordy_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_phone_number_test_py - 2017.11.29 at 21h 04m 51s.xml">
+      <configuration name="py.test in phone_number_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -324,14 +319,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34155184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="293" height="1217" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14720812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295796" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922408" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="1622" y="288" width="454" height="886" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -370,9 +365,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="63" column="42" lean-forward="false" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -456,16 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordy/wordy_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wordy/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -474,6 +457,22 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordy/wordy_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wordy/wordy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -491,25 +490,15 @@
     <entry file="file://$PROJECT_DIR$/phone-number/phone_number_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <caret line="0" column="15" lean-forward="true" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phone-number/phone_number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wordy/wordy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
