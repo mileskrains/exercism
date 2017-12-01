@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0994ab62-040c-4ee4-aeec-eda6acb1b7da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" />
       <change beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="$PROJECT_DIR$/Untitled.ipynb" />
+      <change beforePath="$PROJECT_DIR$/transpose/transpose.py" afterPath="$PROJECT_DIR$/transpose/transpose.py" />
+      <change beforePath="$PROJECT_DIR$/transpose/transpose_test.py" afterPath="$PROJECT_DIR$/transpose/transpose_test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +16,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python$py_test_in_phone_number_test_py.coverage" NAME="py.test in phone_number_test.py Coverage Results" MODIFIED="1512018288898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_ocr_numbers_test_OcrTest_test_recognizes_8.coverage" NAME="py.test for ocr_numbers_test.OcrTest.test_recognizes_8 Coverage Results" MODIFIED="1512057806918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ocr-numbers" />
-    <SUITE FILE_PATH="coverage/python$py_test_in_transpose_test_py.coverage" NAME="py.test in transpose_test.py Coverage Results" MODIFIED="1512149931026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/transpose" />
+    <SUITE FILE_PATH="coverage/python$py_test_in_transpose_test_py.coverage" NAME="py.test in transpose_test.py Coverage Results" MODIFIED="1512154035488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/transpose" />
     <SUITE FILE_PATH="coverage/python$py_test_in_minesweeper_test_py.coverage" NAME="py.test in minesweeper_test.py Coverage Results" MODIFIED="1511913590704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/python$py_test_for_house_test_VerseTest_test_verse_1.coverage" NAME="py.test for house_test.VerseTest.test_verse_1 Coverage Results" MODIFIED="1512063931584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/house" />
     <SUITE FILE_PATH="coverage/python$py_test_for_triangle_test_TriangleTests.coverage" NAME="py.test for triangle_test.TriangleTests Coverage Results" MODIFIED="1512086138826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/triangle" />
@@ -35,24 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transpose/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transpose_test.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transpose_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/transpose/transpose_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="4471">
+              <caret line="263" column="19" lean-forward="false" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="19" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -60,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="transpose.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="transpose.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transpose/transpose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -96,8 +84,8 @@
         <option value="$PROJECT_DIR$/house/house.py" />
         <option value="$PROJECT_DIR$/triangle/triangle.py" />
         <option value="$PROJECT_DIR$/dot-dsl/dot_dsl.py" />
-        <option value="$PROJECT_DIR$/transpose/transpose.py" />
         <option value="$PROJECT_DIR$/transpose/transpose_test.py" />
+        <option value="$PROJECT_DIR$/transpose/transpose.py" />
       </list>
     </option>
   </component>
@@ -137,11 +125,6 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="dot-dsl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
@@ -305,12 +288,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 08h 25m 19s.xml">
-      <configuration name="py.test in transpose_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 08h 27m 54s.xml">
-      <configuration name="py.test in transpose_test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 08h 34m 22s.xml">
       <configuration name="py.test in transpose_test.py" configurationId="tests" />
     </history-entry>
@@ -335,6 +312,12 @@
     <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 09h 38m 53s.xml">
       <configuration name="py.test in transpose_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 10h 13m 35s.xml">
+      <configuration name="py.test in transpose_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_transpose_test_py - 2017.12.01 at 10h 47m 17s.xml">
+      <configuration name="py.test in transpose_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +335,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29659173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="293" height="1217" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -668,21 +651,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transpose/transpose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/transpose/transpose_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="4471">
+          <caret line="263" column="19" lean-forward="false" selection-start-line="263" selection-start-column="19" selection-end-line="263" selection-end-column="19" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transpose/transpose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
