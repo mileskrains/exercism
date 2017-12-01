@@ -18,12 +18,14 @@
     <SUITE FILE_PATH="coverage/python$py_test_in_minesweeper_test_py.coverage" NAME="py.test in minesweeper_test.py Coverage Results" MODIFIED="1511913590704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/python$py_test_for_house_test_VerseTest_test_verse_1.coverage" NAME="py.test for house_test.VerseTest.test_verse_1 Coverage Results" MODIFIED="1512063931584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/house" />
     <SUITE FILE_PATH="coverage/python$py_test_for_triangle_test_TriangleTests.coverage" NAME="py.test for triangle_test.TriangleTests Coverage Results" MODIFIED="1512086138826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/triangle" />
+    <SUITE FILE_PATH="coverage/python$py_test_for_dot_dsl_test_DotDslTest_test_graph_with_one_node_with_keywords.coverage" NAME="py.test for dot_dsl_test.DotDslTest.test_graph_with_one_node_with_keywords Coverage Results" MODIFIED="1512094820317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dot-dsl" />
     <SUITE FILE_PATH="coverage/python$py_test_in_bracket_push_test_py.coverage" NAME="py.test in bracket_push_test.py Coverage Results" MODIFIED="1511890330897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bracket-push" />
     <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_invalid_when_9_digits.coverage" NAME="py.test for phone_number_test.PhoneTest.test_invalid_when_9_digits Coverage Results" MODIFIED="1512017810800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_house_test_VerseTest_test_verse_0.coverage" NAME="py.test for house_test.VerseTest.test_verse_0 Coverage Results" MODIFIED="1512063969746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/house" />
     <SUITE FILE_PATH="coverage/python$py_test_in_house_test_py.coverage" NAME="py.test in house_test.py Coverage Results" MODIFIED="1512064278003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/house" />
     <SUITE FILE_PATH="coverage/python$py_test_for_queen_attack_test_QueenAttackTest.coverage" NAME="py.test for queen_attack_test.QueenAttackTest Coverage Results" MODIFIED="1511918630611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/queen-attack" />
     <SUITE FILE_PATH="coverage/python$py_test_in_wordy_test_py.coverage" NAME="py.test in wordy_test.py Coverage Results" MODIFIED="1512015686216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wordy" />
+    <SUITE FILE_PATH="coverage/python$py_test_in_dot_dsl_test_py.coverage" NAME="py.test in dot_dsl_test.py Coverage Results" MODIFIED="1512107981141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dot-dsl" />
     <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation.coverage" NAME="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation Coverage Results" MODIFIED="1512017801055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_minesweeper_test_MinesweeperTest_test_space_surrounded_by_mines.coverage" NAME="py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines Coverage Results" MODIFIED="1511912987852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/python$py_test_in_ocr_numbers_test_py.coverage" NAME="py.test in ocr_numbers_test.py Coverage Results" MODIFIED="1512058358963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ocr-numbers" />
@@ -33,7 +35,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/triangle/README.md">
+        <entry file="file://$PROJECT_DIR$/dot-dsl/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
               <first_editor relative-caret-position="0">
@@ -45,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="triangle_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/triangle/triangle_test.py">
+      <file leaf-file-name="dot_dsl_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="867">
+              <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -57,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="triangle.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/triangle/triangle.py">
+      <file leaf-file-name="dot_dsl.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="377">
+              <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -84,6 +86,7 @@
         <option value="$PROJECT_DIR$/ocr-numbers/ocr_numbers.py" />
         <option value="$PROJECT_DIR$/house/house.py" />
         <option value="$PROJECT_DIR$/triangle/triangle.py" />
+        <option value="$PROJECT_DIR$/dot-dsl/dot_dsl.py" />
       </list>
     </option>
   </component>
@@ -127,7 +130,7 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="triangle" type="462c0819:PsiDirectoryNode" />
+              <item name="dot-dsl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,7 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for triangle_test.TriangleTests">
+  <component name="RunManager" selected="Python tests.py.test in dot_dsl_test.py">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -172,6 +175,22 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="py.test for dot_dsl_test.DotDslTest.test_graph_with_one_node_with_keywords" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dot-dsl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;dot_dsl_test.DotDslTest.test_graph_with_one_node_with_keywords&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="py.test for house_test.VerseTest.test_verse_0" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,22 +205,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;house_test.VerseTest.test_verse_0&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="py.test for house_test.VerseTest.test_verse_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/house" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;house_test.VerseTest.test_verse_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test for triangle_test.TriangleTests" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -220,6 +223,22 @@
       <option name="_new_target" value="&quot;triangle_test.TriangleTests&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
+    <configuration name="py.test in dot_dsl_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dot-dsl" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/dot-dsl/dot_dsl_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <configuration name="py.test in house_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,36 +255,20 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/house/house_test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test in ocr_numbers_test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ocr-numbers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/ocr-numbers/ocr_numbers_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in ocr_numbers_test.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in house_test.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_1" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_0" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for triangle_test.TriangleTests" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in house_test.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_0" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for triangle_test.TriangleTests" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for dot_dsl_test.DotDslTest.test_graph_with_one_node_with_keywords" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in dot_dsl_test.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for triangle_test.TriangleTests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in house_test.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_0" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_1" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in ocr_numbers_test.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in dot_dsl_test.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for dot_dsl_test.DotDslTest.test_graph_with_one_node_with_keywords" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for triangle_test.TriangleTests" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in house_test.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for house_test.VerseTest.test_verse_0" />
       </list>
     </recent_temporary>
   </component>
@@ -286,35 +289,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_triangle_test_TriangleTests - 2017.11.30 at 15h 54m 46s.xml">
-      <configuration name="py.test for triangle_test.TriangleTests" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 20m 30s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_triangle_test_TriangleTests - 2017.11.30 at 15h 55m 40s.xml">
-      <configuration name="py.test for triangle_test.TriangleTests" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 29m 16s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 32m 16s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 30m 25s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 33m 27s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 33m 26s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 34m 22s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 46m 19s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 36m 08s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 47m 43s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 37m 01s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 54m 52s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 46m 19s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 56m 25s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 49m 50s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 57m 48s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_house_test_py - 2017.11.30 at 09h 51m 19s.xml">
-      <configuration name="py.test in house_test.py" configurationId="tests" />
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 59m 42s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -571,6 +574,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/triangle/triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/triangle/triangle_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/triangle/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -582,20 +603,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/triangle/triangle_test.py">
+    <entry file="file://$PROJECT_DIR$/dot-dsl/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="867">
+          <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/triangle/triangle.py">
+    <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="377">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding />
         </state>
       </provider>
