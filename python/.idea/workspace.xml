@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0994ab62-040c-4ee4-aeec-eda6acb1b7da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" />
       <change beforePath="$PROJECT_DIR$/Untitled.ipynb" afterPath="$PROJECT_DIR$/Untitled.ipynb" />
+      <change beforePath="$PROJECT_DIR$/dot-dsl/dot_dsl.py" afterPath="$PROJECT_DIR$/dot-dsl/dot_dsl.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +27,7 @@
     <SUITE FILE_PATH="coverage/python$py_test_in_house_test_py.coverage" NAME="py.test in house_test.py Coverage Results" MODIFIED="1512064278003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/house" />
     <SUITE FILE_PATH="coverage/python$py_test_for_queen_attack_test_QueenAttackTest.coverage" NAME="py.test for queen_attack_test.QueenAttackTest Coverage Results" MODIFIED="1511918630611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/queen-attack" />
     <SUITE FILE_PATH="coverage/python$py_test_in_wordy_test_py.coverage" NAME="py.test in wordy_test.py Coverage Results" MODIFIED="1512015686216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wordy" />
-    <SUITE FILE_PATH="coverage/python$py_test_in_dot_dsl_test_py.coverage" NAME="py.test in dot_dsl_test.py Coverage Results" MODIFIED="1512107981141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dot-dsl" />
+    <SUITE FILE_PATH="coverage/python$py_test_in_dot_dsl_test_py.coverage" NAME="py.test in dot_dsl_test.py Coverage Results" MODIFIED="1512108873066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dot-dsl" />
     <SUITE FILE_PATH="coverage/python$py_test_for_phone_number_test_PhoneTest_test_valid_when_11_digits_and_first_is_1_with_punctuation.coverage" NAME="py.test for phone_number_test.PhoneTest.test_valid_when_11_digits_and_first_is_1_with_punctuation Coverage Results" MODIFIED="1512017801055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/phone-number" />
     <SUITE FILE_PATH="coverage/python$py_test_for_minesweeper_test_MinesweeperTest_test_space_surrounded_by_mines.coverage" NAME="py.test for minesweeper_test.MinesweeperTest.test_space_surrounded_by_mines Coverage Results" MODIFIED="1511912987852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/minesweeper" />
     <SUITE FILE_PATH="coverage/python$py_test_in_ocr_numbers_test_py.coverage" NAME="py.test in ocr_numbers_test.py Coverage Results" MODIFIED="1512058358963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ocr-numbers" />
@@ -35,7 +37,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dot-dsl/README.md">
+        <entry file="file://$PROJECT_DIR$/transpose/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SECOND">
               <first_editor relative-caret-position="0">
@@ -47,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dot_dsl_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl_test.py">
+      <file leaf-file-name="transpose_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transpose/transpose_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="51" column="30" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -59,11 +61,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="transpose.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transpose/transpose.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dot_dsl.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+            <state relative-caret-position="734">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,6 +143,11 @@
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="dot-dsl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="transpose" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -289,15 +306,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 20m 30s.xml">
-      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 29m 16s.xml">
-      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 18h 30m 25s.xml">
-      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 33m 26s.xml">
       <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
@@ -319,6 +327,15 @@
     <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 21h 59m 42s.xml">
       <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 22h 08m 37s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 22h 11m 27s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_dot_dsl_test_py - 2017.11.30 at 22h 14m 34s.xml">
+      <configuration name="py.test in dot_dsl_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1139" y="23" width="1421" height="1417" extended-state="0" />
@@ -327,7 +344,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29659173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="293" height="1217" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -624,10 +641,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/transpose/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transpose/transpose_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transpose/transpose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dot-dsl/dot_dsl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        <state relative-caret-position="734">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>

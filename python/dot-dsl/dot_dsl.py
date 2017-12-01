@@ -29,12 +29,12 @@ def validate_graph_data(data):
         dtypes = list(map(type, d))
         if k not in (ATTR, NODE, EDGE):
             raise ValueError
-        elif k == ATTR and not dtypes == [str, str]:
-            raise ValueError
-        elif k == NODE and not (dtypes == [str, dict] or
-                              dtypes == [str, set]):
-            raise ValueError
-        elif k == EDGE and not dtypes == [str, str, dict]:
+        elif (
+                (k == ATTR and dtypes != [str, str]) or
+                (k == NODE and not (dtypes == [str, dict] or
+                                    dtypes == [str, set])) or
+                (k == EDGE and dtypes != [str, str, dict])
+             ):
             raise ValueError
 
 
