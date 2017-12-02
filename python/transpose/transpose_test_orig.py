@@ -14,11 +14,9 @@ class TransposeTests(unittest.TestCase):
         )
 
     def test_two_characters_in_a_row(self):
-        input_line = "A1"
-        expected = "A\n1"
         self.assertEqual(
-            transpose(input_line),
-            expected
+            transpose("A1"),
+            "\n".join(["A", "1"])
         )
 
     def test_two_characters_in_a_column(self):
