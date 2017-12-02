@@ -27,9 +27,8 @@ def BuildTree(records):
     if not sorted([r.record_id for r in records]) == list(range(len(records))):
         raise ValueError
     records.sort(key=lambda x: (x.parent_id, x.record_id))
-    rr = records.pop(0)
     root = Node(0)
-    for rec in records:
+    for rec in records[1:]:
         if rec.parent_id >= rec.record_id:
             raise ValueError
         node = find_parent(root, rec.parent_id)
