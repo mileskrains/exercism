@@ -1,18 +1,16 @@
-from collections import defaultdict
+from collections import Counter
+from operator import itemgetter
+
 
 def rank_and_suit_analysis(hand):
     ranks = '2 3 4 5 6 7 8 9 10 J Q K A'.split()
     rank_val_dict = dict(zip(ranks, range(2, 15)))
-    rbs = defaultdict(list)
-    sbr = defaultdict(list)
-    for card in hand:
-        rank, suit = rank_val_dict[card[:-1]], card[-1]
-        rbs[suit].append(rank)
-        sbr[rank].append(suit)
-    suit_counts = list(map(len,rbs.values()))
-    rank_counts = sorted(map(len,sbr.values()), reverse=True)
-    counts_of_ranks = [(len(v), k) for k, v in sbr.items()]
-    ranks_for_counts = [r for c, r in sorted(counts_of_ranks, reverse=True)]
+    suit_counts = list(Counter([card[-1] for card in hand]).values())
+    ranks_counter = Counter([rank_val_dict[card[:-1]] for card in hand])
+    ranks_mc = sorted(ranks_counter.most_common(),
+                      key=itemgetter(1, 0), reverse=True)
+    rank_counts = [c for r, c in ranks_mc]
+    ranks_for_counts = [r for r, c in ranks_mc]
     return suit_counts, rank_counts, ranks_for_counts
 
 
