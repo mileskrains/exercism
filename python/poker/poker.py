@@ -1,0 +1,2 @@
+def poker(hand):
+    pass
