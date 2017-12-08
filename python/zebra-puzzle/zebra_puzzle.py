@@ -1,254 +1,287 @@
-class Condition():
-    def __init__(self, number=None, color=None, nationality=None,
-                 pet=None, beverage=None, cigarette=None):
-        self.number = number
-        self.color = color
-        self.nationality = nationality
-        self.pet = pet
-        self.beverage = beverage
-        self.cigarette = cigarette
+import itertools
 
-    def __repr__(self):
-        repr = 'COND:: '
-        repr += ''.join([f'{k}: {v}, ' if v else ''
-                         for k, v in self.__dict__.items()])
-        return repr.strip(', ')
+'''problem data setup'''
 
-    def has_match(self, other):
-        selfspec = [v for k, v in self.__dict__.items() if v]
-        otherspec = [v for k, v in other.__dict__.items() if v]
-        return bool(set(selfspec).intersection(set(otherspec)))
+houses_pattern = [[str(n + 1)] + [None] * 5 for n in range(5)]
 
-    def is_subset(self, other):
-        selfspec = [v for k, v in self.__dict__.items() if v]
-        otherspec = [v for k, v in other.__dict__.items() if v]
-        return set(selfspec).issubset(set(otherspec))
+data = (
+    'number 1 2 3 4 5',
+    'color yellow blue red ivory green',
+    'nationality norwegian ukranian englishman spaniard japanese',
+    'drink water tea milk orange-juice coffee',
+    'smoke kool chesterfield old-gold lucky-strike parliament',
+    'pet fox horse snails dog zebra',
+)
 
-    def is_complement(self, other):
-        selfspec = [k for k, v in self.__dict__.items() if v]
-        otherspec = [k for k, v in other.__dict__.items() if v]
-        return len(set(selfspec).symmetric_difference(set(otherspec))) == 6
+spec_texts = (
+    'englishman red',
+    'spaniard dog',
+    'coffee green',
+    'ukranian tea',
+    'ivory, green',
+    'old-gold snails',
+    'kool yellow',
+    'milk 3',
+    'norwegian 1',
+    'chesterfield, fox',
+    'kool, horse',
+    'lucky-strike orange-juice',
+    'japanese parliament',
+    'norwegian, blue',
+)
 
-    def can_combine(self, other):
-        ds = self.__dict__
-        do = other.__dict__
-        for k, v in ds.items():
-            if v:
-                if do[k] and do[k] != v:
-                    return False
-        return True
+invariants_texts = (
+    'ivory, green',
+)
 
-    def combine(self, other):
-        # other adds to self
-        ds = self.__dict__
-        do = other.__dict__
-        combo = {**ds, **{k: v for k, v in do.items() if v}}
-        return Condition(**combo)
+incomplete_indices = (3, 5)  # we are solving for a drink and a pet
+complete_indices = [i for i in range(1, 5) if i not in incomplete_indices]
 
+data_dict = {}
+for line in data:
+    dat = line.split()
+    data_dict[dat[0]] = dat[1:]
 
-# 1. are five houses
-houses = [Condition(number=n + 1) for n in range(5)]
+data_ordering = list(data_dict.keys())
+val_key_dict = {}
+for k, v in data_dict.items():
+    for val in v:
+        val_key_dict[val] = k
 
-# 2. englishman lives in red house
-c2 = [Condition(nationality='englishman', color='red')]
-
-# 3. spaniard owns dog
-c3 = [Condition(nationality='spaniard', pet='dog')]
-
-# 4. coffee is drunk in the green house
-c4 = [Condition(beverage='coffee', color='green')]
-
-# 5. the ukranian drinks tea
-c5 = [Condition(nationality='ukranian', beverage='tea')]
-
-# 6. green house just right of ivory
-c6 = [Condition(color='ivory'),
-      Condition(color='green')]
-
-# 7. old gold smoker keeps snails
-c7 = [Condition(cigarette='old gold', pet='snails')]
-
-# 8. kools are smoked in the yellow house
-c8 = [Condition(cigarette='kools', color='yellow')]
-
-# 9. Milk is drunk in the middle house.
-c9 = [Condition(beverage='milk', number=3)]
-
-# 10. The Norwegian lives in the first house.
-c10 = [Condition(nationality='norwegian', number=1)]
-
-# 11. The man who smokes Chesterfields lives in the house next to the man with the fox.
-c11 = [Condition(cigarette='chesters'),
-       Condition(pet='fox')]
-
-# 12. Kools are smoked in the house next to the house where the horse is kept.
-c12 = [Condition(cigarette='kools'),
-       Condition(pet='horse')]
-
-# 13. The Lucky Strike smoker drinks orange juice.
-c13 = [Condition(cigarette='luckys', beverage='oj')]
-
-# 14. The Japanese smokes Parliaments.
-c14 = [Condition(nationality='japanese', cigarette='parliament')]
-
-# 15. The Norwegian lives next to the blue house.
-c15 = [Condition(nationality='norwegian'),
-       Condition(color='blue')]
-
-condition_lists = [c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15]
-cl_is_reversible = [c11, c12, c15]
+'''implementation functions'''
 
 
-def cl_combine_if_common_or_complement(cl_mrg, cl_targ):
-    alignments = range(len(cl_targ) - len(cl_mrg) + 1)
-    for a in alignments:
-        matches = False
-        combines = True
-        complements = True
+def _text_to_cond(spec_text):
+    cond = [None] * 6
+    vals = spec_text.split()
+    for val in vals:
+        key = val_key_dict[val]
+        cond[data_ordering.index(key)] = val
+    return cond
 
-        for p, c in enumerate(cl_mrg):
-            if cl_targ[a + p].has_match(c):
-                matches = True
-            if not cl_targ[a + p].can_combine(c):
-                combines = False
-            if not cl_targ[a + p].is_complement(c):
-                complements = False
 
-        if (matches and combines) or complements:
-            for p, c in enumerate(cl_mrg):
-                cl_targ[a + p] = cl_targ[a + p].combine(c)
+def text_to_cond(spec_text):
+    return list(map(_text_to_cond, spec_text.split(',')))
+
+
+def _compare_conds(condA, condB):
+    match = False
+    fill = 0
+    fit = True
+    for cAe, cBe in zip(condA, condB):
+        if cAe and cAe == cBe:
+            match = True
+        if bool(cAe) != bool(cBe):  # clever XOR
+            fill += 1
+        if cAe and cBe and cAe != cBe:
+            fit = False
+    if match:
+        return 'match'
+    elif fill == 6:
+        return 'fill'
+    elif fit:
+        return 'fit'
+    else:
+        return 'fail'
+
+
+def _invariant_is_violated(cond_list):
+    for inv in invariants_lists:
+        match = False
+        res = [_compare_conds(inv[ci], c) for ci, c in enumerate(cond_list)]
+        res_w_rev = res + [_compare_conds(inv[1 - ci], c) for ci, c in enumerate(cond_list)]
+        if 'match' in res_w_rev and 'fail' in res:
             return True
     return False
 
 
-def cl_combine_if_fits_one_spot(cl_mrg, cl_targ):
-    alignments = range(len(cl_targ) - len(cl_mrg) + 1)
-    combines_list = []
-    for a in alignments:
-        combines = True
-        for p, c in enumerate(cl_mrg):
-            if not cl_targ[a + p].can_combine(c):
-                combines = False
-        combines_list.append(combines)
-        if combines:
-            a_comb = a
-        if cl_mrg in cl_is_reversible:
-            combines = True
-            for p, c in enumerate(list(reversed(cl_mrg))):
-                if not cl_targ[a + p].can_combine(c):
-                    combines = False
-            combines_list.append(combines)
-        if combines:
-            a_comb = a
-
-    if sum(combines_list) == 1:
-        for p, c in enumerate(cl_mrg):
-            cl_targ[a_comb + p] = cl_targ[a_comb + p].combine(c)
+def _classify_cond_list_at_pos(target, cond_list, pos):
+    # compound conds are left aligned
+    if len(cond_list) == 2:
+        if pos == 4:
+            pos = 3
+        if _invariant_is_violated(cond_list):
+            return 'fail'
+    res = [_compare_conds(target[pos + ci], c) for ci, c in enumerate(cond_list)]
+    if 'fail' in res:
+        return 'fail'
+    if 'match' in res:
+        return 'match'
+    elif 'fill' in res:
+        return 'fill'
+    else:
+        return 'fit'
 
 
-def _cl_in_cl(cl_mrg, cl_targ):
-    alignments = range(len(cl_targ) - len(cl_mrg) + 1)
-    for a in alignments:
-        is_subset = True
-
-        for p, c in enumerate(cl_mrg):
-            if not c.is_subset(cl_targ[a + p]):
-                is_subset = False
-        if is_subset:
-            return True
-    return False
+def flip_cond_list_if_allowed(cond_list):
+    if len(cond_list) == 1:
+        return cond_list
+    cl_rev = cond_list[::-1]
+    if not _invariant_is_violated(cl_rev):
+        return cl_rev
+    return cond_list
 
 
-def list_conds_by_field():
-    conds_with_field = []
-    for f in houses[0].__dict__.keys():
-        f_conds = [f]
-        for cl in condition_lists:
-            for c in cl:
-                if getattr(c, f):
-                    if cl not in f_conds:
-                        f_conds.append(cl)
-        conds_with_field.append(f_conds)
-    return conds_with_field
+def classify_cond_list_at_pos(target, cond_list, pos):
+    if pos + len(cond_list) > len(target):
+        pos -= 1
+    target = target[pos:pos + len(cond_list)]
+    res = _classify_cond_list_at_pos(target, cond_list, 0)
+    cl_rev = flip_cond_list_if_allowed(cond_list)
+    if cl_rev != cond_list:
+        res_flipped = _classify_cond_list_at_pos(target, cl_rev, 0)
+        if res == 'fail':
+            return res_flipped
+        elif res == 'fit' and res_flipped == 'fill':
+            return res_flipped
+        elif res == 'fill' and res_flipped == 'match':
+            return res_flippped
+    return res
 
 
-def _list_combining_cls(hi, cl_list):
-    combining_list = []  # keep track here, using only unreversed cls
-    for cl in cl_list:
-        if len(cl) == 1:
-            if houses[hi].can_combine(cl[0]):
-                combining_list.append(cl)
-        else:  # any of four patterns which are valid
-            if hi - 1 >= 0:
-                if houses[hi - 1].can_combine(cl[0]) and houses[hi].can_combine(cl[1]):
-                    combining_list.append(cl)
-                if (cl in cl_is_reversible and
-                        houses[hi - 1].can_combine(cl[1]) and
-                        houses[hi].can_combine(cl[0])):
-                    if cl not in combining_list:
-                        combining_list.append(cl)
-            if hi + 1 <= 4:
-                if houses[hi].can_combine(cl[0]) and houses[hi + 1].can_combine(cl[1]):
-                    if cl not in combining_list:
-                        combining_list.append(cl)
-                if (cl in cl_is_reversible and
-                        houses[hi].can_combine(cl[1]) and
-                        houses[hi + 1].can_combine(cl[0])):
-                    if cl not in combining_list:
-                        combining_list.append(cl)
-    return combining_list
+def find_mergeable_conditions():
+    # finds overlapping condition lists
+    mergeable_lists = []
+    for cla in all_cond_lists:
+        for clb in all_cond_lists:
+            if cla != clb and len(cla) < len(clb):
+                for pos in (0, 1):
+                    res = classify_cond_list_at_pos(clb, cla, pos)
+                    if res == 'match':
+                        mergeable_lists.append([clb, cla])
+    return mergeable_lists
 
 
-def cl_combine_if_one_fits_spot():
-    conds_with_field = list_conds_by_field()
-    for fcl in conds_with_field:
-        if len(fcl) > 1:  # has conds
-            f = fcl[0]
-            if f not in ('pet', 'beverage'):  # as these are not fully specified
-                for hi, h in enumerate(houses):
-                    if not getattr(h, f):
-                        combining_cls = _list_combining_cls(hi, fcl[1:])
-                        if len(combining_cls) == 1:
-                            cl_mrg = combining_cls[0]
-                            for p, c in enumerate(cl_mrg):
-                                houses[hi + p] = houses[hi + p].combine(c)
-                        return
+def merge_at_match(clb, cla):
+    clb = clb[:]
+    # a into b, if len are equal, position is 0, else must find if pos is 0 or 1
+    match_pos = 0
+    if len(cla) == 1 and len(clb) == 2:
+        if _compare_conds(clb[1], cla[0]) == 'match':
+            match_pos = 1
+    for cli, cl in enumerate(cla):
+        clb[match_pos + cli] = [c if c else cl[i]
+                                for i, c in enumerate(clb[match_pos + cli])]
+    return clb
 
 
-def view_condition_list(condlist):
-    for c in condlist:
-        print([f'{v:<10}' if v else ' ' * 10 for k, v in c.__dict__.items()])
+def merge_conditions_where_possible():
+    for mcs in find_mergeable_conditions():
+        clb, cla = mcs
+        clb_new = (merge_at_match(clb, cla))
+        all_cond_lists.remove(cla)
+        clb_loc = all_cond_lists.index(clb)
+        all_cond_lists[clb_loc] = clb_new
 
 
-# see progress / status
-view_condition_list(houses)
-print()
-for cl in condition_lists:
-    view_condition_list(cl)
-    print()
+def merge_to_houses(houses, cl, pos):
+    houses = houses[:]
+    houses[pos:pos + len(cl)] = merge_at_match(houses[pos:pos + len(cl)], cl)
+    return houses
 
-# do some merging ...
-for _ in range(33):
-    combined = []
-    for cl in condition_lists:
-        for ocl in condition_lists:
-            if cl != ocl and len(cl) <= len(ocl):
-                if cl_combine_if_common_or_complement(cl, ocl):
-                    combined.append(cl)
-    condition_lists = [cl for cl in condition_lists if not cl in combined]
 
-    for cl in condition_lists:
-        cl_combine_if_fits_one_spot(cl, houses)
-        cl_combine_if_common_or_complement(cl, houses)
+def merge_matching_conds_into_houses(houses):
+    houses = houses[:]
+    merge_clis = []
+    for hi, _ in enumerate(houses):
+        for cli, cl in enumerate(all_cond_lists):
+            res = classify_cond_list_at_pos(houses, all_cond_lists[cli], hi)
+            if res == 'match':
+                merge_clis.append((cli, hi))
+    for cli, hi in sorted(merge_clis, reverse=True):
+        houses = merge_to_houses(houses, all_cond_lists[cli], hi)
+        del all_cond_lists[cli]
+    return houses
 
-    condition_lists = [cl for cl in condition_lists if not _cl_in_cl(cl, houses)]
 
-    cl_combine_if_one_fits_spot()
+def merge_conditions_fitting_single_spot_into_houses(houses):
+    houses = houses[:]
+    merge_clis = []
+    for cei in complete_indices:
+        clis_with_ce = [cli
+                        for cli, cl in enumerate(all_cond_lists)
+                        if any([c[cei] for c in cl])]
+        for hi in range(5):
+            if not houses[hi][cei]:  # not already populated
+                fit_res = [classify_cond_list_at_pos(houses, all_cond_lists[cli], hi)
+                           for cli in clis_with_ce]
+                if fit_res.count('fit') == 1:
+                    fit_cli = clis_with_ce[fit_res.index('fit')]
+                    merge_clis.append((fit_cli, hi))
+    for cli, hi in sorted(merge_clis, reverse=True):
+        houses = merge_to_houses(houses, all_cond_lists[cli], hi)
+        del all_cond_lists[cli]
+    return houses
 
-# see progress / status
-print('\n\n\n')
-view_condition_list(houses)
-print()
-for cl in condition_lists:
-    view_condition_list(cl)
-    print()
+
+def see_houses_and_all_cond_list():
+    for hi, h in enumerate(houses):
+        print('-' * 71, hi)
+        print('|'.join([f'{ce:<12}' if ce else ' ' * 12 for ce in h]))
+    print('\n\n')
+    for cli, cl in enumerate(all_cond_lists):
+        print('-' * 71, cli)
+        for c in cl:
+            print('|'.join([f'{ce:<12}' if ce else ' ' * 12 for ce in c]))
+
+
+def test_trial_position(tps):
+    global houses_solution
+    test_houses = houses[:]
+    try:
+        for cli, clp in enumerate(tps):
+            test_houses = merge_to_houses(test_houses, all_cond_lists[cli], clp)
+        none_count = sum([h.count(None) for h in test_houses])
+        if none_count == 2:
+            houses_solution = test_houses
+        return none_count
+    except:
+        pass
+
+
+def solution():
+    global houses_solution
+    drink_index = 3
+    pet_index = 5
+    for house in houses_solution:
+        if house[drink_index] is None:
+            water_drinker = house[2].capitalize()
+        if house[pet_index] is None:
+            zebra_keeper = house[2].capitalize()
+    return (f'It is the {water_drinker} who drinks the water.\n'
+            f'The {zebra_keeper} keeps the zebra.')
+
+
+'''execution'''
+
+all_cond_lists = list(map(text_to_cond, spec_texts))
+invariants_lists = list(map(text_to_cond, invariants_texts))
+merge_conditions_where_possible()
+houses = houses_pattern[:]
+houses = merge_matching_conds_into_houses(houses)
+houses = merge_conditions_fitting_single_spot_into_houses(houses)
+
+houses_solution = []
+
+fit_locs = [[hi for hi in range(5) if classify_cond_list_at_pos(houses, cl, hi) == 'fit']
+            for cl in all_cond_lists]
+trial_positions = list(itertools.product(*fit_locs))
+trial_positions = [tps for tps in trial_positions
+                   if set(tps) == set((0, 1, 2, 3, 4))]
+for tp in trial_positions:
+    if test_trial_position(tp) == 2:
+        break
+
+all_cond_lists = [flip_cond_list_if_allowed(cond_list) for cond_list in all_cond_lists]
+fit_locs = [[hi for hi in range(5) if classify_cond_list_at_pos(houses, cl, hi) == 'fit']
+            for cl in all_cond_lists]
+trial_positions = list(itertools.product(*fit_locs))
+trial_positions = [tps for tps in trial_positions
+                   if set(tps) == set((0, 1, 2, 3, 4))]
+for tp in trial_positions:
+    if test_trial_position(tp) == 2:
+        break
+
+houses = houses_solution
+# see_houses_and_all_cond_list()
+solution()
