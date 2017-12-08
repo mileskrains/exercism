@@ -235,7 +235,7 @@ def test_trial_position(tps):
         if none_count == 2:
             houses_solution = test_houses
         return none_count
-    except:
+    except IndexError:
         pass
 
 
