@@ -8,6 +8,7 @@ def take_unique(books):
             uniques.append(book)
     return uniques, remainder
 
+
 def calculate_total(books):
     if not books:
         return 0
