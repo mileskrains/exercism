@@ -1,5 +1,6 @@
 from string import ascii_uppercase
 
+
 def make_diamond(letter):
     letters = ascii_uppercase[:ascii_uppercase.index(letter)+1]
     size = 2*len(letters)-1
