@@ -24,12 +24,11 @@ class Point(object):
 
 class WordSearch(object):
     def __init__(self, puzzle):
-        self.puzzle = puzzle
         self.puz_dict = defaultdict(str)
         for ln, line in enumerate(puzzle.split('\n')):
             for cn, ch in enumerate(line):
                 self.puz_dict[ln, cn] = ch
-        self.search_locs = [sl for sl in list(self.puz_dict)]
+        self.search_locs = list(self.puz_dict)
 
     def search(self, word):
         dir_offsets = ((1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1))
