@@ -14,7 +14,7 @@ class Clock(object):
             self.minutes += other
         self.minutes = self.minutes % (24 * 60)
         self.resolve()
-        return self.__repr__()
+        return self
 
     def __repr__(self):
         return f'{self.hour:0>2}:{self.minute:0>2}'
