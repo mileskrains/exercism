@@ -2,13 +2,12 @@ from collections import defaultdict
 
 
 def tally(tournament_results):
-    results = 'Team'.ljust(31, ' ') + '| MP |  W |  D |  L |  P\n'
+    report = 'Team'.ljust(31, ' ') + '| MP |  W |  D |  L |  P\n'
     if not tournament_results:
-        return results.strip()
+        return report.strip()
     tally_dict = defaultdict(lambda : defaultdict(int))
-    contests = tournament_results.split('\n')
-    for contest in contests:
-        p1, p2, res = contest.split(';')
+    for game in tournament_results.split('\n'):
+        p1, p2, res = game.split(';')
         tally_dict[p1]['MP'] += 1
         tally_dict[p2]['MP'] += 1
         if res == 'loss':
@@ -25,10 +24,9 @@ def tally(tournament_results):
             tally_dict[p2]['P'] += 1
     table = []
     for k, v in tally_dict.items():
-        table.append([k] + [v[vk] for vk in 'MP W D L P'.split()])
-    table.sort(key=lambda t: (-t[1], -t[2], -t[3], -t[4], -t[5], t[0]))
-    for t, mp, w, d, l, p in table:
-        results += ' |  '.join([str(val)
-                                for val in (t.ljust(30, ' '), mp, w, d, l, p)]) + '\n'
-    return results.strip()
+        table.append([k.ljust(30, ' ')] + [v[vk] for vk in 'MP W D L P'.split()])
+    table.sort(key=lambda t: (-t[5], -t[1], -t[2], -t[3], t[0]))
+    for row in table:
+        report += ' |  '.join([str(val) for val in row]) + '\n'
+    return report.strip()
 
