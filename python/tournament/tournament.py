@@ -27,7 +27,7 @@ def tally(tournament_results):
     table = []
     for k, v in tally_dict.items():
         table.append([k.ljust(30, ' ')] + [v[vk] for vk in 'MP W D L P'.split()])
-    table.sort(key=lambda t: (-t[5], t[1], t[0]))
+    table.sort(key=lambda r: (-r[5], r[1], r[0]))
 
     for row in table:
         report += ' |  '.join([str(val) for val in row]) + '\n'
