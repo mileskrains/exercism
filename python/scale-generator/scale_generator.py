@@ -17,17 +17,16 @@ class Scale(object):
     def pitches(self):
         if (self.tonic in 'Bb Db Eb Gb Ab D F'.split() or
                 self.scale_name == 'locrian'):
-            chromatic = self.chrom_fl + self.chrom_fl
+            chromatic = self.chrom_fl
         else:
-            chromatic = self.chrom_sh + self.chrom_sh
+            chromatic = self.chrom_sh
         tonic_index = chromatic.index(self.tonic)
         if not self.pattern:
-            return chromatic[tonic_index:tonic_index + 12]
+            return chromatic[tonic_index:] + chromatic[:tonic_index]
         else:
             ind = tonic_index
-            pitch_list = [chromatic[ind]]
+            pitch_list = [chromatic[ind % 12]]
             for step in list(self.pattern)[:-1]:
                 ind += step
-                pitch_list.append(chromatic[ind])
+                pitch_list.append(chromatic[ind % 12])
             return pitch_list
-
