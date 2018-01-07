@@ -19,10 +19,9 @@ def tally(tournament_results):
             tally_dict[p1]['P'] += 3
             tally_dict[p2]['L'] += 1
         elif res == 'draw':
-            tally_dict[p1]['D'] += 1
-            tally_dict[p1]['P'] += 1
-            tally_dict[p2]['D'] += 1
-            tally_dict[p2]['P'] += 1
+            for p in p1, p2:
+                tally_dict[p]['D'] += 1
+                tally_dict[p]['P'] += 1
 
     table = []
     for k, v in tally_dict.items():
