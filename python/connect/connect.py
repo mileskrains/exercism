@@ -13,8 +13,6 @@ class ConnectGame:
     def get_winner(self):
         if self.mri == 0 and self.mci == 0:
             return self.board_dict[0, 0]
-        move_rc_offsets = ((-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1))
-        winner = ''
 
         def check():
             nonlocal winner
@@ -31,6 +29,8 @@ class ConnectGame:
                             winner = win_char
                             break
 
+        move_rc_offsets = ((-1, 0), (-1, 1), (0, 1), (1, 0), (1, -1), (0, -1))
+        winner = ''
         win_char, win_index, win_val = 'O', 0, self.mri
         unvis = [(0, sc) for sc in range(self.mci + 1)
                  if self.board_dict[0, sc] == win_char]
