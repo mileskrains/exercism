@@ -1,8 +1,7 @@
 from collections import defaultdict
 
-BLACK = 'B'
-WHITE = 'W'
-NONE = ''
+
+BLACK, WHITE, NONE = 'B', 'W', ''
 
 
 class Board:
@@ -75,5 +74,5 @@ class Board:
                 stone, territory = self.territoryFor((c, r))
                 territories[stone].update(territory)
                 checked.extend(list(territory))
-        return dict(territories)
+        return territories
 
