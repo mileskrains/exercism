@@ -147,8 +147,8 @@ class ComplexNumbersTest(unittest.TestCase):
     def test_eulers_identity_formula(self):
         input_number = ComplexNumber(0, math.pi)
         expected = ComplexNumber(-1, 0)
-        self.assertEqual(input_number.exp().real, expected.real)
-        self.assertEqual(input_number.exp().imaginary, expected.imaginary)
+        self.assertAlmostEqual(input_number.exp().real, expected.real)
+        self.assertAlmostEqual(input_number.exp().imaginary, expected.imaginary)
 
     def test_exponential_of_0(self):
         input_number = ComplexNumber(0, 0)
