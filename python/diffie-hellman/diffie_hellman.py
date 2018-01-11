@@ -15,6 +15,7 @@ def private_key(p):
         r = random.randint(2, p-1)
     return r
 
+
 def pow_mod(x, y, z):
     "Calculate x**y % z efficiently."
     number = 1
@@ -25,9 +26,11 @@ def pow_mod(x, y, z):
         x = x * x % z
     return number
 
+
 def public_key(p, g, private):
     return pow_mod(g, private, p)
 
 
 def secret(p, public, private):
     return pow_mod(public, private, p)
+
