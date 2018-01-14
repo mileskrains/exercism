@@ -1,28 +1,63 @@
 class Zipper(object):
+
     @staticmethod
     def from_tree(tree):
-        pass
+        new = Zipper()
+        new.tree = tree
+        new.offsets = []
+        return new
 
     def value(self):
-        pass
+        tree = self.tree
+        for offset in self.offsets:
+            tree = tree[offset]
+        return tree['value']
 
-    def set_value(self):
-        pass
+    def set_key(self, key, value):
+        tree = self.tree
+        for offset in self.offsets:
+            tree = tree[offset]
+        tree[key] = value
+        new = Zipper.from_tree(self.tree)
+        new.offsets = self.offsets
+        return new
+
+    def set_value(self, value):
+        return self.set_key('value', value)
+
+    def subtree(self):
+        tree = self.tree
+        for offset in self.offsets:
+            tree = tree[offset]
+        return tree
 
     def left(self):
-        pass
+        new = Zipper.from_tree(self.tree)
+        new.offsets = self.offsets + ['left']
+        if new.subtree():
+            return new
+        else:
+            return None
 
-    def set_left(self):
-        pass
+    def set_left(self, value):
+        return self.set_key('left', value)
 
     def right(self):
-        pass
+        new = Zipper.from_tree(self.tree)
+        new.offsets = self.offsets + ['right']
+        if new.subtree():
+            return new
+        else:
+            return None
 
-    def set_right(self):
-        pass
+    def set_right(self, value):
+        return self.set_key('right', value)
 
     def up(self):
-        pass
+        new = Zipper.from_tree(self.tree)
+        if self.offsets:
+            new.offsets = self.offsets[:-1]
+        return new
 
     def to_tree(self):
-        pass
+        return self.tree
