@@ -13,7 +13,7 @@ class Zipper(object):
             tree = tree[offset]
         return tree['value']
 
-    def set_key(self, key, value):
+    def set_(self, key, value):
         tree = self.tree
         for offset in self.offsets:
             tree = tree[offset]
@@ -23,7 +23,7 @@ class Zipper(object):
         return new
 
     def set_value(self, value):
-        return self.set_key('value', value)
+        return self.set_('value', value)
 
     def subtree(self):
         tree = self.tree
@@ -40,7 +40,7 @@ class Zipper(object):
             return None
 
     def set_left(self, value):
-        return self.set_key('left', value)
+        return self.set_('left', value)
 
     def right(self):
         new = Zipper.from_tree(self.tree)
@@ -51,7 +51,7 @@ class Zipper(object):
             return None
 
     def set_right(self, value):
-        return self.set_key('right', value)
+        return self.set_('right', value)
 
     def up(self):
         new = Zipper.from_tree(self.tree)
