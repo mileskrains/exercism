@@ -13,6 +13,6 @@ def chain(dominoes):
             for link in links:
                 new_remainder = remainder.copy()
                 new_remainder.remove(link)
-                if link[1] == match_val:
+                if link[0] != match_val:
                     link = tuple(reversed(link))
                 tries.append((chain + [link], new_remainder))
