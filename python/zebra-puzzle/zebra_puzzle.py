@@ -56,7 +56,7 @@ def find_available_values(item):
                     a, b = b, a
                 aval = known[a]
                 if aval:
-                    return [v for v in [aval - 1, aval + 1] if v in unused]
+                    return [v for v in [aval-1, aval+1] if v in unused]
             else:
                 a, b = ds.split()
                 if a == item:
@@ -91,22 +91,28 @@ def process_specs():
                         knowns[a] == known[b]
 
 
-data_sets = [ds.split() for ds in data_sets]
+def item_nationality(item):
+    item_house = known[item]
+    return [nat for nat in data_sets[1] if known[nat] == item_house][0]
 
+
+def solution():
+    return (f"It is the {item_nationality('water').capitalize()} who drinks the water.\n"
+            f"The {item_nationality('zebra').capitalize()} keeps the zebra.")
+
+
+data_sets = [ds.split() for ds in data_sets]
 known = dict()
 for ds in data_sets:
     for item in ds:
         known[item] = 0
-
 for _ in range(5):
     process_specs()
-
 unknown = [k for k, v in known.items() if not v]
 known_orig = known.copy()
 
 try_item = unknown.pop(0)
 try_val_lists = [[(try_item, av)] for av in find_available_values(try_item)]
-
 found = False
 while not found and try_val_lists:
     known = known_orig.copy()
@@ -125,12 +131,4 @@ tvl = try_val_lists.pop()
 for item, try_val in tvl:
     known[item] = try_val
 
-
-def item_nationality(item):
-    item_house = known[item]
-    return [nat for nat in data_sets[1] if known[nat] == item_house][0]
-
-
-def solution():
-    return (f"It is the {item_nationality('water').capitalize()} who drinks the water.\n"
-            f"The {item_nationality('zebra').capitalize()} keeps the zebra.")
+print(solution())
